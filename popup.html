@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Bookmark Butler</title>
+    <!-- Add Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <style>
+      body {
+        background-color: #e5c7f7;
+      }
+      .card {
+        background-color: #e6e6ff;
+      }
+      .card-title {
+        color: #333;
+      }
+      .form-control,
+      .btn {
+        background-color: #f9f9f9;
+        color: #555;
+      }
+      .container {
+        width: 350px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row justify-content-center my-4">
+        <div class="col-md-8">
+          <div class="card">
+            <div class="card-body">
+              <img
+                src="icon.png"
+                class="rounded mx-auto d-block"
+                alt="Bookmark Butler Logo"
+                style="max-width: 40%"
+              />
+              <h4 class="card-title text-center">Bookmark Butler</h4>
+              <div class="form-group">
+                <select
+                  id="bookmarkFolders"
+                  class="form-control form-control-sm"
+                ></select>
+              </div>
+              <div class="text-center">
+                <button id="openButton" class="btn btn-primary btn-sm">
+                  Open Bookmarks
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Add local script files -->
+    <script src="jquery-3.5.1.slim.min.js"></script>
+    <script src="popper.min.js"></script>
+    <script src="bootstrap.min.js"></script>
+    <script src="popup.js"></script>
+  </body>
+</html>
